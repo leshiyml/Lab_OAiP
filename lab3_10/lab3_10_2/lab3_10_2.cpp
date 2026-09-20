@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <math.h>
 #include <clocale>
 using namespace std;
@@ -8,34 +8,34 @@ int main()
 
 	double a, b, h, n, x, y, k, sum = 0.0, step = 0.0, fakt, i;
 
-	cout << "Çàäàéòå a = ";
+	cout << "Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ a = ";
 	while (!(cin >> a))
 	{
-		cout << "Îøèáêà! Ââåäèòå a çàíîâî: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 		cin.clear();
 		cin.ignore(1000, '\n');
 	}
 
-	cout << "Çàäàéòå b = ";
+	cout << "Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ b = ";
 	while (!(cin >> b))
 	{
-		cout << "Îøèáêà! Ââåäèòå b çàíîâî: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 		cin.clear();
 		cin.ignore(1000, '\n');
 	}
 
-	cout << "Çàäàéòå h = ";
+	cout << "Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ h = ";
 	while (!(cin >> h))
 	{
-		cout << "Îøèáêà! Ââåäèòå h çàíîâî: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ h Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 		cin.clear();
 		cin.ignore(1000, '\n');
 	}
 
-	cout << "Çàäàéòå n = ";
+	cout << "Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ n = ";
 	while (!(cin >> n))
 	{
-		cout << "Îøèáêà! Ââåäèòå n çàíîâî: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ n Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 		cin.clear();
 		cin.ignore(1000, '\n');
 	}
@@ -57,11 +57,11 @@ int main()
 			sum += r;
 		}
 
-		cout << "Çíà÷åíèå x = " << x << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x = " << x << "     ";
 
-		cout << "Çíà÷åíèå Y(x) = " << y << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Y(x) = " << y << "     ";
 
-		cout << "Çíà÷åíèå S(x) = " << sum << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ S(x) = " << sum << "     ";
 
 		cout << "|Y(x)-S(x)| = " << fabs(y - sum) << "\n";
 
