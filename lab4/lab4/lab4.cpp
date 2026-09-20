@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <math.h>
 #include <clocale>
 using namespace std;
@@ -6,10 +6,10 @@ using namespace std;
 double nazvper(char a)
 {
 	double value;
-	cout << "Çàäàéòå "<< a << " = ";
+	cout << "Ð—Ð°Ð´Ð°Ð¹Ñ‚Ðµ "<< a << " = ";
 	while (!(cin >> value))
 	{
-		cout << "Îøèáêà! Ââåäèòå " << a << " çàíîâî: ";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << a << " Ð·Ð°Ð½Ð¾Ð²Ð¾: ";
 		cin.clear();
 		cin.ignore(1000, '\n');
 	}
@@ -21,12 +21,12 @@ double nazvper(char a)
 //{
 //	if (x == 1)
 //	{
-//		printf("ïðèâåò");
+//		printf("Ð¿Ñ€Ð¸Ð²ÐµÑ‚");
 //		return 1;
 //	}
 //	else
 //	{
-//		printf("èäè íà");
+//		printf("Ð¸Ð´Ð¸ Ð½Ð°");
 //		return 2;
 //	}
 //
@@ -69,11 +69,11 @@ int main()
 			sum += r;
 		}
 
-		cout << "Çíà÷åíèå x = " << x << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x = " << x << "     ";
 
-		cout << "Çíà÷åíèå Y(x) = " << y << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Y(x) = " << y << "     ";
 
-		cout << "Çíà÷åíèå S(x) = " << sum << "     ";
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ S(x) = " << sum << "     ";
 
 		cout << "|Y(x)-S(x)| = " << fabs(y - sum) << "\n";
 
