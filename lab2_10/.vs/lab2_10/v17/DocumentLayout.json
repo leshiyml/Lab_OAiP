@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS Projects\\lab2_10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B46557D4-2285-4054-B8CF-992003BC45D8}|lab2_10\\lab2_10.vcxproj|D:\\VS Projects\\lab2_10\\lab2_10\\lab2_10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B46557D4-2285-4054-B8CF-992003BC45D8}|lab2_10\\lab2_10.vcxproj|solutionrelative:lab2_10\\lab2_10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab2_10.cpp",
+              "DocumentMoniker": "D:\\VS Projects\\lab2_10\\lab2_10\\lab2_10.cpp",
+              "RelativeDocumentMoniker": "lab2_10\\lab2_10.cpp",
+              "ToolTip": "D:\\VS Projects\\lab2_10\\lab2_10\\lab2_10.cpp",
+              "RelativeToolTip": "lab2_10\\lab2_10.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-09-08T16:32:09.124Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
