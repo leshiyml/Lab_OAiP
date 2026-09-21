@@ -1,4 +1,4 @@
 ﻿  lab4.cpp
-D:\Lab_OAiP\lab4\lab4\lab4.cpp(79,21): warning C4101: Y: неиспользованная локальная переменная
-D:\Lab_OAiP\lab4\lab4\lab4.cpp(79,18): warning C4101: x: неиспользованная локальная переменная
+D:\Lab_OAiP\lab4\lab4\lab4.cpp(74,21): warning C4101: Y: неиспользованная локальная переменная
+D:\Lab_OAiP\lab4\lab4\lab4.cpp(74,18): warning C4101: x: неиспользованная локальная переменная
   lab4.vcxproj -> D:\Lab_OAiP\lab4\x64\Debug\lab4.exe
