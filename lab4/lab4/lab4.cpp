@@ -5,8 +5,9 @@ using namespace std;
 
 double nazvper(char a)
 {
-	double value;
 	cout << "Задайте "<< a << " = ";
+
+	double value;
 	while (!(cin >> value))
 	{
 		cout << "Ошибка! Введите " << a << " заново: ";
@@ -17,21 +18,29 @@ double nazvper(char a)
 }
 
 
-//double (int x)
-//{
-//	if (x == 1)
-//	{
-//		printf("привет");
-//		return 1;
-//	}
-//	else
-//	{
-//		printf("иди на");
-//		return 2;
-//	}
-//
-//	return sin(x);
-//}
+double calcY(double x) 
+{
+
+	return (exp(x) + exp(-x)) / 2;
+
+}
+
+
+double calcSUM(double x,int n)
+{
+	double r = 1.0;
+	double sum = r;
+
+	for (int k = 1; k < n; k++)
+	{
+		r = r * (x * x) / ((2 * k) * (2 * k - 1));
+
+		sum += r;
+	}
+
+	return sum;
+
+}
 
 
 int main()
@@ -39,43 +48,27 @@ int main()
 	
 	setlocale(LC_ALL, "Russian");
 	
-	double a, b, h, n, x, y, k, sum = 0.0, step = 0.0, fakt, i;
+	double a, b, h, n, x, Y, sum = 0.0, i = 0.0;
 
 	a = nazvper('a');
 	b = nazvper('b');
 	h = nazvper('h');
 	n = nazvper('n');
 
-	/*double rez_a_b(double)
-	{
-
-
-	}
-
 	for (x = a; x <= b; x += h)
 	{
-		double r = 1.0;
-		sum = 1.0;
-		y = 0;
-		int i = 0;
 
-		y = (exp(x) + exp(-x)) / 2;
+		Y = calcY(x);
 
-		for (k = 1; k < n; k++)
-		{
-			i = i + 1;
-			r = r * x / i;
-
-			sum += r;
-		}
+		sum = calcSUM(x, n);
 
 		cout << "Значение x = " << x << "     ";
 
-		cout << "Значение Y(x) = " << y << "     ";
+		cout << "Значение Y(x) = " << Y << "     ";
 
 		cout << "Значение S(x) = " << sum << "     ";
 
-		cout << "|Y(x)-S(x)| = " << fabs(y - sum) << "\n";
+		cout << "|Y(x)-S(x)| = " << fabs(Y - sum) << "\n";
 
-	}*/
+	}
 }
