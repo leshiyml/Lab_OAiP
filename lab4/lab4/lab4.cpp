@@ -1,9 +1,10 @@
 ﻿#include <iostream>
 #include <math.h>
 #include <clocale>
+
 using namespace std;
 
-double nazvper(char a)
+double nameper(char a)
 {
 	cout << "Задайте "<< a << " = ";
 
@@ -17,7 +18,6 @@ double nazvper(char a)
 	return value;
 }
 
-
 double calcY(double x) 
 {
 
@@ -25,8 +25,9 @@ double calcY(double x)
 
 }
 
+int n = 0;
 
-double calcSUM(double x,int n)
+double calcSUM(double x)
 {
 	double r = 1.0;
 	double sum = r;
@@ -42,25 +43,15 @@ double calcSUM(double x,int n)
 
 }
 
-
-int main()
+void Out_Rez(double (*f1)(double), double (*f2)(double), double a, double b, double h)
 {
-	
-	setlocale(LC_ALL, "Russian");
-	
-	double a, b, h, n, x, Y, sum = 0.0, i = 0.0;
 
-	a = nazvper('a');
-	b = nazvper('b');
-	h = nazvper('h');
-	n = nazvper('n');
-
-	for (x = a; x <= b; x += h)
+	for (double x = a; x <= b; x += h)
 	{
 
-		Y = calcY(x);
+		double Y = f1(x);
 
-		sum = calcSUM(x, n);
+		double sum = f2(x);
 
 		cout << "Значение x = " << x << "     ";
 
@@ -71,4 +62,22 @@ int main()
 		cout << "|Y(x)-S(x)| = " << fabs(Y - sum) << "\n";
 
 	}
+
+
+}
+
+int main()
+{
+	
+	setlocale(LC_ALL, "Russian");
+	
+	double a, b, h, x, Y, sum = 0.0, i = 0.0;
+
+	a = nameper('a');
+	b = nameper('b');
+	h = nameper('h');
+	n = (int)nameper('n');
+	
+	Out_Rez(calcY, calcSUM,a,b,h);
+	
 }
