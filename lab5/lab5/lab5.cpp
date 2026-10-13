@@ -3,11 +3,11 @@
 #include <clocale>
 using namespace std;
 
-double nameper(char a)
+int nameper(char a)
 {
-	cout << "Задайте " << a << " = ";
+	cout << "Введите количество элементов массива " << a << " = ";
 
-	double value;
+	int value;
 	while (!(cin >> value))
 	{
 		cout << "Ошибка! Введите " << a << " заново: ";
@@ -17,16 +17,56 @@ double nameper(char a)
 	return value;
 }
 
+int elem(int num)
+{
+	int value;
+	cout << num << " число = ";
+
+	while (!(cin >> value))
+	{
+		cout << "Ошибка! Введите " << num  << " заново: ";
+		cin.clear();
+		cin.ignore(1000, '\n');
+	}
+	return value;
+
+}
+
 int main()
 {
 
 	setlocale(LC_ALL, "Russian");
 
-	int x;
+	int n;
+	int mass[100] = {0};
 
-	x = nameper('x');
+	n = nameper('n');
 
-	int a[0+x];
+	cout << "Введите " << n << " целых чисел: \n";
 
+	for (int i = 0; i < n; i++)
+	{
+		mass[i] = elem(i + 1);
+	}
+
+	int min = 0;
+
+	for (int i = 1; i < n; i++)
+	{
+		if (abs(mass[i]) < abs(mass[min]))
+		{
+			min = i;
+		}
+	}
+
+	int sum = 0;
+
+	for (int i = min + 1; i < n; i++)
+	{
+		sum += abs(mass[i]);
+	}
+
+	cout << "\nИндекс минимального значения элемента по модулю = " << min + 1 << " (значение: "<< mass[min] << ")\n";
+	cout << "Сумму модулей элементов массива, расположенных после минимального по модулю элемента = " << sum << "\n \n \n \n";
 
 }
