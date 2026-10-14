@@ -59,11 +59,26 @@ int main()
 		}
 	}
 
+	bool duplicate = false;
+	for (int i = 0; i < n; i++)
+	{
+		if (abs(mass[i]) == abs(mass[min]) && i != min)
+		{
+			duplicate = true;
+			break;
+		}
+	}
+
 	int sum = 0;
 
 	for (int i = min + 1; i < n; i++)
 	{
 		sum += abs(mass[i]);
+	}
+
+	if (duplicate == true)
+	{
+		sum = 0;
 	}
 
 	cout << "\nИндекс минимального значения элемента по модулю = " << min + 1 << " (значение: "<< mass[min] << ")\n";
