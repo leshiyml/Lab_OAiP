@@ -1,0 +1,9 @@
+﻿  lab6.cpp
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(70,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(75,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(77,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(84,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(86,21): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(102,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Lab_OAiP\lab6\lab6\lab6.cpp(65,18): warning C4101: m: неиспользованная локальная переменная
+  lab6.vcxproj -> D:\Lab_OAiP\lab6\x64\Debug\lab6.exe
